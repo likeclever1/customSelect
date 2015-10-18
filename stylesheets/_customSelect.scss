@@ -7,6 +7,7 @@
 .custom-select__area{
     border: 2px solid #ff00cc;
     border-radius: 5px;
+    padding: 5px;
     position: relative;
 
     .custom-select__option {
@@ -32,6 +33,13 @@
 .custom-select__down {
     border: 2px solid #0000ff;
     border-radius: 0 0 5px 5px;
+}
+
+.custom-select__selected {
+    display: inline-block;
+    padding: 5px 15px 5px 5px;
+    position: relative;
+    border: 2px solid red;
 }
 
 .custom-select__option{
