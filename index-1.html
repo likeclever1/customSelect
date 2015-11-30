@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Select</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/customSelect.css">
+</head>
+<body>
+    
+    <div class="block" style="width: 400px">
+        <select name="select" data-component="select">
+            <option value="1">item1</option>
+            <option value="2">item2</option>
+            <option value="3">item3</option>
+        </select>
+    </div>
+
+    <script src="javascript/jquery.2.1.4.js"></script>
+    <script src="javascript/jquery.customSelect-1.min.js"></script>
+
+    <script>
+        if( $("[data-component='select']").length ) {
+            $("[data-component='select']").customSelect();
+        }
+    </script>
+    
+</body>
+</html>

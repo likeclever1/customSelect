@@ -1,21 +1,20 @@
-.custom-select{
-    display: inline-block;
+.customSelect{
     vertical-align: top;
-    width: 200px;
+    position: relative;
 }
 
-.custom-select__area{
+.customSelect__top{
     border: 2px solid #ff00cc;
     border-radius: 5px;
     padding: 5px;
     position: relative;
-
-    .custom-select__option {
-        border-bottom: 0;
-    }
 }
 
-.custom-select__area:after{
+.customSelect__option {
+    border-bottom: 0;
+}
+
+.customSelect__top:after{
     display: block;
     content: "";
     text-indent: -9999px;
@@ -30,27 +29,26 @@
     margin-top: -2px;
 }
 
-.custom-select__down {
+.customSelect__down {
     border: 2px solid #0000ff;
     border-radius: 0 0 5px 5px;
 }
 
-.custom-select__selected {
-    display: inline-block;
+.customSelect__selected {
     padding: 5px 15px 5px 5px;
     position: relative;
     border: 2px solid red;
 }
 
-.custom-select__option{
+.customSelect__option{
     padding: 5px;
     border-bottom: 1px solid #ccc;
 }
 
-.selected {
-    background-color: #ccc;
+.open .customSelect__down {
+    display: block !important;
 }
 
-.open .custom-select__down {
-    display: block !important;
+.selected {
+    background-color: #ccc;
 }
